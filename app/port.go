@@ -25,8 +25,7 @@ func CheckPort(port string) (bound bool, err error) {
 		//port is probably taken
 		return false, err
 	}
-	
+
 	defer l.Close()
 	return true, nil
-
 }
