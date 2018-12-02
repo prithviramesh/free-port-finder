@@ -20,6 +20,6 @@ var RootCmd = &cobra.Command {
     },
 }
 
-/*func init() {
+func init() {
 	RootCmd.AddCommand(CheckPortCmd)
-}*/
+}
