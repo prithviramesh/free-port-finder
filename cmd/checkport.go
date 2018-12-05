@@ -9,7 +9,7 @@ import (
 )
 
 var CheckPortCmd = &cobra.Command {
-	Use: "check",
+	Use: "free-port-finder check",
 	Short: "checks if a given port is free",
 	Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
