@@ -11,7 +11,6 @@ var FindPortCmd = &cobra.Command {
 	Use: "find",
 	Short: "finds free TCP ports available on your machine",
 	Long: "free-port-finder uses Go's built in net library to find free available TCP ports on localhost",
-	Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
         if port, err := app.FindPort(); err != nil {
 			//TODO: implement better error handling
